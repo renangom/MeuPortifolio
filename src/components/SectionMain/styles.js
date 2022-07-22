@@ -5,6 +5,9 @@ export const SectionContainer = styled.section`
     background: #1b1b1b;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 730px){
+        height: 110vh;
+    }
 `;
 
 export const ContainerSobre = styled.div`
@@ -12,6 +15,11 @@ export const ContainerSobre = styled.div`
     justify-content: center;
     align-items: center;
     padding: 2rem 4rem;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 730px){
+        flex-direction: column;
+    }
 `;
 export const Sobre = styled.div`
     flex: 1;
@@ -20,6 +28,9 @@ export const Sobre = styled.div`
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    @media screen and (max-width: 730px){
+        margin-bottom: 1rem;
+    }
 `;
 export const Texto = styled.h3`
     color: #fff;
@@ -40,7 +51,6 @@ export const ImagemContainer = styled.div`
 `;
 
 export const Container = styled.div`
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;

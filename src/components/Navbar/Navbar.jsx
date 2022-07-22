@@ -1,11 +1,17 @@
-import React, {useState} from 'react'
+import React, {useRef, useState} from 'react'
 import { ContainerLinks, ContainerLogo, ItemsLista, LinkItem, Lista, Logo, MenuMobile, NavContainer } from './styles'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function Navbar() {
+export default function Navbar({inicio, sobre, projetos, contato}) {
     const [menuActive, setMenuActive] = useState(false)
 
+    const scrollToRef = (referencia) => {
+        window.scrollTo({
+            top: referencia.current.offsetTop,
+            behavior: "smooth"
+        })
+    }
     const handleMenuMobile = () => {
         setMenuActive(!menuActive)
     }
@@ -17,16 +23,16 @@ export default function Navbar() {
         <ContainerLinks ativo={menuActive}>
             <Lista>
                 <ItemsLista>
-                    <LinkItem>Início</LinkItem>
+                    <LinkItem onClick={() => scrollToRef({inicio})}>Início</LinkItem>
                 </ItemsLista>
                 <ItemsLista>
-                    <LinkItem>Sobre</LinkItem>
+                    <LinkItem onClick={() => scrollToRef({sobre})}>Sobre</LinkItem>
                 </ItemsLista>
                 <ItemsLista>
-                    <LinkItem>Projetos</LinkItem>
+                    <LinkItem onClick={() => scrollToRef({projetos})}>Projetos</LinkItem>
                 </ItemsLista>
                 <ItemsLista>
-                    <LinkItem>Contato</LinkItem>
+                    <LinkItem onClick={() => scrollToRef({contato})}>Contato</LinkItem>
                 </ItemsLista>
             </Lista>
         </ContainerLinks>
