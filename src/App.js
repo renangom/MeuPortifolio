@@ -2,6 +2,7 @@ import { useRef } from "react";
 import GlobalStyle from "./GlobalStyles";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
+import Projetos from "./pages/Projetos/Projetos";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <GlobalStyle />
       <Home ref={inicio} inicio={inicio} sobre={sobre} projetos={projetos} contato={contato} />
       <About ref={sobre} />
+      <Projetos />
     </div>
   );
 }
