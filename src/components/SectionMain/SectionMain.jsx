@@ -15,8 +15,8 @@ export default function SectionMain() {
                 <Nome> Renan Lopes</Nome>
                 <Texto>Dasenvolvedor FullStack-Junior</Texto>
                 <ContainerButton>
-                    <Button icon={<LinkedInIcon />} text="LinkedIn" color1="10d8e2" color2="9258f7"  />
-                    <Button icon={<LinkedInIcon />} text="GitHub" color1="d340d8" color2="6618b4" />
+                    <Button href='https://www.linkedin.com/in/renan-lopes-75a6b8150/' text="LinkedIn" color1="10d8e2" color2="9258f7"  />
+                    <Button href='https://github.com/renangom'  text="GitHub" color1="d340d8" color2="6618b4" />
                 </ContainerButton>
             </Sobre>
             <ImagemContainer>

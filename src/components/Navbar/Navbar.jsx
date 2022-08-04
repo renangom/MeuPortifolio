@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react'
 import { ContainerLinks, ContainerLogo, ItemsLista, LinkItem, Lista, Logo, MenuMobile, NavContainer } from './styles'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import {Link} from 'react-scroll'
 
 export default function Navbar({inicio, sobre, projetos, contato}) {
     const [menuActive, setMenuActive] = useState(false)
@@ -23,16 +24,16 @@ export default function Navbar({inicio, sobre, projetos, contato}) {
         <ContainerLinks ativo={menuActive}>
             <Lista>
                 <ItemsLista>
-                    <LinkItem onClick={() => scrollToRef({inicio})}>Início</LinkItem>
+                    <Link to='main' spy={true} smooth={true} offset={-100} duration={500}>Início</Link>
                 </ItemsLista>
                 <ItemsLista>
-                    <LinkItem onClick={() => scrollToRef({sobre})}>Sobre</LinkItem>
+                    <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>Sobre</Link>
                 </ItemsLista>
                 <ItemsLista>
-                    <LinkItem onClick={() => scrollToRef({projetos})}>Projetos</LinkItem>
+                    <Link to='projects' spy={true} smooth={true} offset={-100} duration={500}>Projetos</Link>
                 </ItemsLista>
                 <ItemsLista>
-                    <LinkItem onClick={() => scrollToRef({contato})}>Contato</LinkItem>
+                    <Link to='contato' spy={true} smooth={true} offset={-100} duration={500} >Contato</Link>
                 </ItemsLista>
             </Lista>
         </ContainerLinks>

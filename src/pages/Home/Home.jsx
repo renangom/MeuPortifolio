@@ -6,8 +6,7 @@ import {Container} from './styles'
 
 export default function Home({inicio, sobre, projetos, contato}) {
   return (
-    <Container>
-        <Navbar inicio={inicio} sobre={sobre} projetos={projetos} contato={contato} />
+    <Container id='main'>
         <SectionMain />
     </Container>
   )

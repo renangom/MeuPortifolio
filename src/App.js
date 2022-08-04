@@ -1,8 +1,11 @@
 import { useRef } from "react";
+import { Footer } from "./components/Footer/Footer";
 import GlobalStyle from "./GlobalStyles";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Projetos from "./pages/Projetos/Projetos";
+import {Link} from 'react-scroll'
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
@@ -15,9 +18,11 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Home ref={inicio} inicio={inicio} sobre={sobre} projetos={projetos} contato={contato} />
-      <About ref={sobre} />
+      <Navbar />
+      <Home />
+      <About />
       <Projetos />
+      <Footer />
     </div>
   );
 }

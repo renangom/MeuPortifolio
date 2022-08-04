@@ -6,7 +6,8 @@ export const NavContainer = styled.nav`
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    position: relative;
+    position: sticky;
+    top: 0;
 `;
 export const ContainerLogo = styled.div`
     flex: 1;
@@ -18,6 +19,11 @@ export const Logo = styled.a`
     color: #00d2df;
     font-size: 2rem;
     font-weight: 500;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `;
 
 export const ContainerLinks = styled.div`
@@ -50,6 +56,10 @@ export const Lista = styled.ul`
 export const ItemsLista = styled.li`
     margin: 0 2rem;
 
+
+    > a {
+        color: #fff;
+    }
     @media screen and (max-width: 968px){
         margin-bottom: 3rem;
         font-size: 1.5rem;
@@ -73,3 +83,4 @@ export const MenuMobile = styled.div`
         
     }
 `;
+ 

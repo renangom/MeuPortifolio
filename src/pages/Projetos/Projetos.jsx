@@ -5,7 +5,7 @@ import { ProjetosContainer } from './styles'
 export default function Projetos() {
   return (
     
-    <ProjetosContainer >
+    <ProjetosContainer id='projects' >
         <ProjectSection />
     </ProjetosContainer>
   )
