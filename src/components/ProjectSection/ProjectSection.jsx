@@ -16,7 +16,7 @@ export default function ProjectSection() {
                 <Text>Este site foi feito para uma empresa de Bauru chamada PC Show.</Text>
                 <Tech>Tecnologias: ReactJS, ReactRouter, StyledComponents, MaterialUI.</Tech>
                 <ContainerButtons>
-                    <Button text="Acesse" color1="10d8e2" color2="9258f7" href="https://pcshow.netlify.app/" />
+                    <Button text="Acesse" color1="10d8e2" color2="9258f7" href="https://pcshows.com.br/" />
                     <Button text="GitHub" color1="d340d8" color2="6618b4" href="https://github.com/renangom/divuvlgacao" />
                 </ContainerButtons>
             </ContainerContent>
@@ -41,6 +41,18 @@ export default function ProjectSection() {
                 <Tech>Tecnologias: NodeJS, Express, MongoDB, JSONWEBTOKEN, etc...</Tech>
                 <ContainerButtons>
                     <Button text="GitHub" color1="d340d8" color2="6618b4" href="https://github.com/renangom/divuvlgacao" />
+                </ContainerButtons>
+            </ContainerContent>
+        </ContainerCard>
+        <ContainerCard>
+            <Image src={admin} />
+            <ContainerContent>
+                <Title>Painel de Administração</Title>
+                <Text>Este é um painel para o administrador do ecommerce, onde genriará seu site</Text>
+                <Tech>Tecnologias: ReactJS, ReactRouter, MaterialUI, Recharts, etc...</Tech>
+                <ContainerButtons>
+                    <Button text="Acesse" color1="10d8e2" color2="9258f7" href="https://adminpainel.netlify.app/" />
+                    <Button text="GitHub" color1="d340d8" color2="6618b4" href="https://github.com/renangom/adminEcommerce" />
                 </ContainerButtons>
             </ContainerContent>
         </ContainerCard>
